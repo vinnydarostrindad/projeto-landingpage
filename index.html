@@ -36,7 +36,7 @@
                     </p>
                 </div>
             </article>
-            <form class="registerForm">
+            <form class="registerForm" id="registerForm">
                 <div>
                     <label for="clientName">Seu nome:</label>
                     <input type="text" name="clientName" id="clientName">
@@ -63,90 +63,90 @@
         <section class="products">
             <h2><div></div>Sua seleção especial<div></div></h2>
             <section class="productsGallery">
-                <ul class="productsList">
+                <ul class="productsList" id="productsList">
                     <li class="productContainer">
-                        <div class="product"></div>
+                        <div class="productImg"></div>
                         <h3 class="productName">Nome do produto</h3>
                         <h4 class="productDescription">Descrição do produto um pouco maior, com duas linhas ou três que explica melhor do que se trata.</h4>
                         <span class="oldPrice">De: R$23,99</span>
-                        <span class="spotPrice"><strong>Por: R$19,99</strong></span>
+                        <span class="price"><strong>Por: R$19,99</strong></span>
                         <span class="installmentPrice">ou 2x de R$9,99</span>
                         <button>Comprar</button>
                     </li>
                     <li class="productContainer">
-                        <div class="product"></div>
+                        <div class="productImg"></div>
                         <h3 class="productName">Nome do produto</h3>
                         <h4 class="productDescription">Descrição do produto um pouco maior, com duas linhas ou três que explica melhor do que se trata.</h4>
                         <span class="oldPrice">De: R$23,99</span>
-                        <span class="spotPrice"><strong>Por: R$19,99</strong></span>
+                        <span class="price"><strong>Por: R$19,99</strong></span>
                         <span class="installmentPrice">ou 2x de R$9,99</span>
                         <button>Comprar</button>
                     </li>
                     <li class="productContainer">
-                        <div class="product"></div>
+                        <div class="productImg"></div>
                         <h3 class="productName">Nome do produto</h3>
                         <h4 class="productDescription">Descrição do produto um pouco maior, com duas linhas ou três que explica melhor do que se trata.</h4>
                         <span class="oldPrice">De: R$23,99</span>
-                        <span class="spotPrice"><strong>Por: R$19,99</strong></span>
+                        <span class="price"><strong>Por: R$19,99</strong></span>
                         <span class="installmentPrice">ou 2x de R$9,99</span>
                         <button>Comprar</button>
                     </li>
                     <li class="productContainer">
-                        <div class="product"></div>
+                        <div class="productImg"></div>
                         <h3 class="productName">Nome do produto</h3>
                         <h4 class="productDescription">Descrição do produto um pouco maior, com duas linhas ou três que explica melhor do que se trata.</h4>
                         <span class="oldPrice">De: R$23,99</span>
-                        <span class="spotPrice"><strong>Por: R$19,99</strong></span>
+                        <span class="price"><strong>Por: R$19,99</strong></span>
                         <span class="installmentPrice">ou 2x de R$9,99</span>
                         <button>Comprar</button>
                     </li>
                     <li class="productContainer">
-                        <div class="product"></div>
+                        <div class="productImg"></div>
                         <h3 class="productName">Nome do produto</h3>
                         <h4 class="productDescription">Descrição do produto um pouco maior, com duas linhas ou três que explica melhor do que se trata.</h4>
                         <span class="oldPrice">De: R$23,99</span>
-                        <span class="spotPrice"><strong>Por: R$19,99</strong></span>
+                        <span class="price"><strong>Por: R$19,99</strong></span>
                         <span class="installmentPrice">ou 2x de R$9,99</span>
                         <button>Comprar</button>
                     </li>
                     <li class="productContainer">
-                        <div class="product"></div>
+                        <div class="productImg"></div>
                         <h3 class="productName">Nome do produto</h3>
                         <h4 class="productDescription">Descrição do produto um pouco maior, com duas linhas ou três que explica melhor do que se trata.</h4>
                         <span class="oldPrice">De: R$23,99</span>
-                        <span class="spotPrice"><strong>Por: R$19,99</strong></span>
+                        <span class="price"><strong>Por: R$19,99</strong></span>
                         <span class="installmentPrice">ou 2x de R$9,99</span>
                         <button>Comprar</button>
                     </li>
                     <li class="productContainer">
-                        <div class="product"></div>
+                        <div class="productImg"></div>
                         <h3 class="productName">Nome do produto</h3>
                         <h4 class="productDescription">Descrição do produto um pouco maior, com duas linhas ou três que explica melhor do que se trata.</h4>
                         <span class="oldPrice">De: R$23,99</span>
-                        <span class="spotPrice"><strong>Por: R$19,99</strong></span>
+                        <span class="price"><strong>Por: R$19,99</strong></span>
                         <span class="installmentPrice">ou 2x de R$9,99</span>
                         <button>Comprar</button>
                     </li>
                     <li class="productContainer">
-                        <div class="product"></div>
+                        <div class="productImg"></div>
                         <h3 class="productName">Nome do produto</h3>
                         <h4 class="productDescription">Descrição do produto um pouco maior, com duas linhas ou três que explica melhor do que se trata.</h4>
                         <span class="oldPrice">De: R$23,99</span>
-                        <span class="spotPrice"><strong>Por: R$19,99</strong></span>
+                        <span class="price"><strong>Por: R$19,99</strong></span>
                         <span class="installmentPrice">ou 2x de R$9,99</span>
                         <button>Comprar</button>
                     </li>
                 </ul>
             </section>
-            <button>Ainda mais produtos aqui!</button>
+            <button id="showMoreProducts">Ainda mais produtos aqui!</button>
         </section>
         <section class="share">
             <h2><div></div>Compartilhe a novidade<div></div></h2>
             <p>Quer que seus amigos também ganhem a lista personalizada deles? Preencha agora!</p>
-            <form class="shareForm">
+            <form class="shareForm" id="shareForm">
                 <div class="friendInfo">
                     <div>
-                        <label for="friendName" class="productName">Nome do seu amigo:</label>
+                        <label for="friendName">Nome do seu amigo:</label>
                         <input type="text" name="friendName" id="friendName">
                     </div>
                     <div>
