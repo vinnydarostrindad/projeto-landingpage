@@ -27,20 +27,35 @@
         <section class="helpAlgorithm">
             <article>
                 <h2>Ajude o algoritmo a ser mais certeiro</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultricies tellus nec mi porta convallis sollicitudin eu urna. Mauris rhoncus erat sed interdum dignissim. Suspendisse semper pretium consectetur. Praesent bibendum arcu risus, sit amet iaculis ex tempus quis. Cras et erat ut tellus vulputate tincidunt. Aenean lacinia euismod augue vel egestas. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum vel urna tortor. Vivamus et arcu non felis tristique eleifend.
-                </p>
-                <p>
-                    Morbi eu condimentum urna. Curabitur eu magna eget turpis condimentum ultrices. Suspendisse quis lorem ultricies, pulvinar purus sed, egestas erat. Etiam ultricies a ante vehicula pharetra. Quisque ut neque mattis, consequat velit ut, ultrices orci. Nulla varius elementum erat vel pharetra. Aenean sit amet nisi diam. Morbi viverra, magna ac luctus commodo, odio ante suscipit libero, at mattis augue est vel metus.
-                </p>
+                <div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultricies tellus nec mi porta convallis sollicitudin eu urna. Mauris rhoncus erat sed interdum dignissim. Suspendisse semper pretium consectetur. Praesent bibendum arcu risus, sit amet iaculis ex tempus quis. Cras et erat ut tellus vulputate tincidunt. Aenean lacinia euismod augue vel egestas. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum vel urna tortor. Vivamus et arcu non felis tristique eleifend.
+                    </p>
+                    <p>
+                        Morbi eu condimentum urna. Curabitur eu magna eget turpis condimentum ultrices. Suspendisse quis lorem ultricies, pulvinar purus sed, egestas erat. Etiam ultricies a ante vehicula pharetra. Quisque ut neque mattis, consequat velit ut, ultrices orci. Nulla varius elementum erat vel pharetra. Aenean sit amet nisi diam. Morbi viverra, magna ac luctus commodo, odio ante suscipit libero, at mattis augue est vel metus.
+                    </p>
+                </div>
             </article>
             <form class="registerForm">
-                <label for="clientName">Seu nome:</label> <input type="text" name="clientName" id="clientName">
-                <label for="clientEmail">E-mail:</label> <input type="email" name="clientEmail" id="clientEmail">
-                <label for="cpf">CPF:</label> <input type="text" name="cpf" id="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}">
+                <div>
+                    <label for="clientName">Seu nome:</label>
+                    <input type="text" name="clientName" id="clientName">
+                </div>
+                <div>
+                    <label for="clientEmail">E-mail:</label>
+                    <input type="email" name="clientEmail" id="clientEmail">
+                </div>
+                <div>
+                    <label for="cpf">CPF:</label>
+                    <input type="text" name="cpf" id="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}">
+                </div>
                 <div class="sex">
-                    <input type="radio" name="sex" id="sexMas"><label for="sexMas">Masculino</label>
-                    <input type="radio" name="sex" id="sexFem"><label for="sexFem">Feminino</label>
+                    <div>
+                        <input type="radio" name="sex" id="sexMas" value="Mas"><label for="sexMas">Masculino</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="sex" id="sexFem" value="Fem"><label for="sexFem">Feminino</label>
+                    </div>
                 </div>
                 <input type="submit" value="Enviar">
             </form>
@@ -50,75 +65,75 @@
             <section class="productsGallery">
                 <ul class="productsList">
                     <li class="productContainer">
-                        <div class="product" style="width: 200px; height: 150px; border: 1px solid gray"></div>
-                        <h3>Nome do produto</h3>
-                        <h4>Descrição do produto um pouco maior, com duas linhas ou três que explica melhor do que se trata.</h4>
-                        <span>De: R$23,99</span>
-                        <span><strong>Por: R$19,99</strong></span>
-                        <span>ou 2x de R$9,99</span>
+                        <div class="product"></div>
+                        <h3 class="productName">Nome do produto</h3>
+                        <h4 class="productDescription">Descrição do produto um pouco maior, com duas linhas ou três que explica melhor do que se trata.</h4>
+                        <span class="oldPrice">De: R$23,99</span>
+                        <span class="spotPrice"><strong>Por: R$19,99</strong></span>
+                        <span class="installmentPrice">ou 2x de R$9,99</span>
                         <button>Comprar</button>
                     </li>
                     <li class="productContainer">
-                        <div class="product" style="width: 200px; height: 150px; border: 1px solid gray"></div>
-                        <h3>Nome do produto</h3>
-                        <h4>Descrição do produto um pouco maior, com duas linhas ou três que explica melhor do que se trata.</h4>
-                        <span>De: R$23,99</span>
-                        <span><strong>Por: R$19,99</strong></span>
-                        <span>ou 2x de R$9,99</span>
+                        <div class="product"></div>
+                        <h3 class="productName">Nome do produto</h3>
+                        <h4 class="productDescription">Descrição do produto um pouco maior, com duas linhas ou três que explica melhor do que se trata.</h4>
+                        <span class="oldPrice">De: R$23,99</span>
+                        <span class="spotPrice"><strong>Por: R$19,99</strong></span>
+                        <span class="installmentPrice">ou 2x de R$9,99</span>
                         <button>Comprar</button>
                     </li>
                     <li class="productContainer">
-                        <div class="product" style="width: 200px; height: 150px; border: 1px solid gray"></div>
-                        <h3>Nome do produto</h3>
-                        <h4>Descrição do produto um pouco maior, com duas linhas ou três que explica melhor do que se trata.</h4>
-                        <span>De: R$23,99</span>
-                        <span><strong>Por: R$19,99</strong></span>
-                        <span>ou 2x de R$9,99</span>
+                        <div class="product"></div>
+                        <h3 class="productName">Nome do produto</h3>
+                        <h4 class="productDescription">Descrição do produto um pouco maior, com duas linhas ou três que explica melhor do que se trata.</h4>
+                        <span class="oldPrice">De: R$23,99</span>
+                        <span class="spotPrice"><strong>Por: R$19,99</strong></span>
+                        <span class="installmentPrice">ou 2x de R$9,99</span>
                         <button>Comprar</button>
                     </li>
                     <li class="productContainer">
-                        <div class="product" style="width: 200px; height: 150px; border: 1px solid gray"></div>
-                        <h3>Nome do produto</h3>
-                        <h4>Descrição do produto um pouco maior, com duas linhas ou três que explica melhor do que se trata.</h4>
-                        <span>De: R$23,99</span>
-                        <span><strong>Por: R$19,99</strong></span>
-                        <span>ou 2x de R$9,99</span>
+                        <div class="product"></div>
+                        <h3 class="productName">Nome do produto</h3>
+                        <h4 class="productDescription">Descrição do produto um pouco maior, com duas linhas ou três que explica melhor do que se trata.</h4>
+                        <span class="oldPrice">De: R$23,99</span>
+                        <span class="spotPrice"><strong>Por: R$19,99</strong></span>
+                        <span class="installmentPrice">ou 2x de R$9,99</span>
                         <button>Comprar</button>
                     </li>
                     <li class="productContainer">
-                        <div class="product" style="width: 200px; height: 150px; border: 1px solid gray"></div>
-                        <h3>Nome do produto</h3>
-                        <h4>Descrição do produto um pouco maior, com duas linhas ou três que explica melhor do que se trata.</h4>
-                        <span>De: R$23,99</span>
-                        <span><strong>Por: R$19,99</strong></span>
-                        <span>ou 2x de R$9,99</span>
+                        <div class="product"></div>
+                        <h3 class="productName">Nome do produto</h3>
+                        <h4 class="productDescription">Descrição do produto um pouco maior, com duas linhas ou três que explica melhor do que se trata.</h4>
+                        <span class="oldPrice">De: R$23,99</span>
+                        <span class="spotPrice"><strong>Por: R$19,99</strong></span>
+                        <span class="installmentPrice">ou 2x de R$9,99</span>
                         <button>Comprar</button>
                     </li>
                     <li class="productContainer">
-                        <div class="product" style="width: 200px; height: 150px; border: 1px solid gray"></div>
-                        <h3>Nome do produto</h3>
-                        <h4>Descrição do produto um pouco maior, com duas linhas ou três que explica melhor do que se trata.</h4>
-                        <span>De: R$23,99</span>
-                        <span><strong>Por: R$19,99</strong></span>
-                        <span>ou 2x de R$9,99</span>
+                        <div class="product"></div>
+                        <h3 class="productName">Nome do produto</h3>
+                        <h4 class="productDescription">Descrição do produto um pouco maior, com duas linhas ou três que explica melhor do que se trata.</h4>
+                        <span class="oldPrice">De: R$23,99</span>
+                        <span class="spotPrice"><strong>Por: R$19,99</strong></span>
+                        <span class="installmentPrice">ou 2x de R$9,99</span>
                         <button>Comprar</button>
                     </li>
                     <li class="productContainer">
-                        <div class="product" style="width: 200px; height: 150px; border: 1px solid gray"></div>
-                        <h3>Nome do produto</h3>
-                        <h4>Descrição do produto um pouco maior, com duas linhas ou três que explica melhor do que se trata.</h4>
-                        <span>De: R$23,99</span>
-                        <span><strong>Por: R$19,99</strong></span>
-                        <span>ou 2x de R$9,99</span>
+                        <div class="product"></div>
+                        <h3 class="productName">Nome do produto</h3>
+                        <h4 class="productDescription">Descrição do produto um pouco maior, com duas linhas ou três que explica melhor do que se trata.</h4>
+                        <span class="oldPrice">De: R$23,99</span>
+                        <span class="spotPrice"><strong>Por: R$19,99</strong></span>
+                        <span class="installmentPrice">ou 2x de R$9,99</span>
                         <button>Comprar</button>
                     </li>
                     <li class="productContainer">
-                        <div class="product" style="width: 200px; height: 150px; border: 1px solid gray"></div>
-                        <h3>Nome do produto</h3>
-                        <h4>Descrição do produto um pouco maior, com duas linhas ou três que explica melhor do que se trata.</h4>
-                        <span>De: R$23,99</span>
-                        <span><strong>Por: R$19,99</strong></span>
-                        <span>ou 2x de R$9,99</span>
+                        <div class="product"></div>
+                        <h3 class="productName">Nome do produto</h3>
+                        <h4 class="productDescription">Descrição do produto um pouco maior, com duas linhas ou três que explica melhor do que se trata.</h4>
+                        <span class="oldPrice">De: R$23,99</span>
+                        <span class="spotPrice"><strong>Por: R$19,99</strong></span>
+                        <span class="installmentPrice">ou 2x de R$9,99</span>
                         <button>Comprar</button>
                     </li>
                 </ul>
@@ -130,17 +145,23 @@
             <p>Quer que seus amigos também ganhem a lista personalizada deles? Preencha agora!</p>
             <form class="shareForm">
                 <div class="friendInfo">
-                    <label for="friendName">Nome do seu amigo:</label> <input type="text" name="friendName" id="friendName">
-                    <label for="friendEmail">E-mail:</label> <input type="email" name="friendEmail" id="friendEmail">
+                    <div>
+                        <label for="friendName" class="productName">Nome do seu amigo:</label>
+                        <input type="text" name="friendName" id="friendName">
+                    </div>
+                    <div>
+                        <label for="friendEmail">E-mail:</label>
+                        <input type="email" name="friendEmail" id="friendEmail">
+                    </div>
                 </div>
                 <input type="submit" value="Enviar agora">
             </form>
         </section>
     </main>
     <footer class="footer">
-        <p><small>Testando suas habilidades em HTML, CSS e JS</small></p>
-        <small>Linx Impulse</small>
-        <small>2019</small>
+        <p>Testando suas habilidades em HTML, CSS e JS</p>
+        <span>Linx Impulse</span>
+        <span>2019</span>
     </footer>
 
     <script src="src/js/main.js"></script>
