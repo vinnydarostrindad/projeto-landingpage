@@ -4,9 +4,9 @@ body {
     font-family: Helvetica, sans-serif;
 }
 
-input {
+input[type="text"], input[type="email"] {
     display: block;
-    color: #3d3d3d;
+    color: #747474;
     font-size: 14px;
     width: 340px;
     height: 30px;
@@ -123,31 +123,35 @@ input {
     height: 280px;
 }
 
+.main .helpAlgorithm .registerForm.remove {
+    display: none;
+}
 
 .main .helpAlgorithm .registerForm label {
     display: block;
     font-size: 12px;
 }
 
-.main .helpAlgorithm .registerForm .sex {
+.main .helpAlgorithm .registerForm .gender {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 203px;
+    padding: 3px;
 }
 
-.main .helpAlgorithm .registerForm .sex div {
+.main .helpAlgorithm .registerForm .gender div {
     display: flex;
     align-items: center;
     gap: 5px;
 }
 
-.main .helpAlgorithm .registerForm .sex label {
+.main .helpAlgorithm .registerForm .gender label {
     display: inline;
     font-size: 12px;
 }
 
-.main .helpAlgorithm .registerForm .sex input[type="radio"] {
+.main .helpAlgorithm .registerForm .gender input[type="radio"] {
     display: inline;
     width: 14px;
     height: 14px;
@@ -158,6 +162,8 @@ input {
     background-color: white;
     font-size: 16px;
     height: 39px;
+    border: 1px solid #707070;
+    border-radius: 4px;
     transition: all 300ms ease;
 }
 
@@ -165,6 +171,52 @@ input {
     color: #fff;
     background-color: #888;
     border: 1px solid #888;
+}
+
+input#clientName.error {
+    border-color: red;
+}
+input#clientName.error::placeholder {
+    color: rgba(255, 0, 0, 0.501);
+}
+
+input#clientEmail.error {
+    border-color: red;
+}
+input#clientEmail.error::placeholder {
+    color: rgba(255, 0, 0, 0.501);
+}
+
+input#cpf.error {
+    border-color: red;
+}
+input#cpf.error::placeholder {
+    color: rgba(255, 0, 0, 0.501);
+}
+
+.savedDataConfirmation {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: #888;
+    width: 340px;
+    height: 100px;
+    border: 2px solid #999999bf;
+    border-radius: 4px;
+}
+
+.savedDataConfirmation p:first-child {
+    font-size: 24px;
+}
+
+.savedDataConfirmation p:last-child {
+    font-size: 20px;
+}
+
+.savedDataConfirmation.appear {
+    display: flex;
 }
 
 /************************
@@ -289,10 +341,10 @@ input {
 .main .share h2 div {
     background-color: #707070;
     width: 38%;
-    height: 1px;
+    height: 0.1px;
 }
 
-.main .share p {
+.main .share > p {
     font-size: 14px;
     text-align: center;
     margin: 44px 0 39px;
@@ -326,6 +378,41 @@ input {
     color: #fff;
     background-color: #888;
     border: 1px solid #888;
+}
+
+input#friendName.error {
+    border-color: red;
+}
+input#friendName.error::placeholder {
+    color: rgba(255, 0, 0, 0.501);
+}
+
+input#friendEmail.error {
+    border-color: red;
+}
+input#friendEmail.error::placeholder {
+    color: rgba(255, 0, 0, 0.501);
+}
+
+.thanksForSharing {
+    position: fixed;
+    top: 25px;
+    left: -330px;
+    color: #fff;
+    background-color: #999;
+    text-align: center;
+    padding: 20px 15px;
+    border: 2px solid #888;
+    border-radius: 4px;
+    transition: all 300ms ease-in-out;
+}
+
+.thanksForSharing p:first-child {
+    margin-bottom: 4px;
+}
+
+.thanksForSharing.appear {
+    left: 25px;
 }
 
 /********************

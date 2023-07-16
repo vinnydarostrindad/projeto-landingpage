@@ -36,7 +36,7 @@
                     </p>
                 </div>
             </article>
-            <form class="registerForm" id="registerForm">
+            <form class="registerForm" id="registerForm" autocomplete="off">
                 <div>
                     <label for="clientName">Seu nome:</label>
                     <input type="text" name="clientName" id="clientName">
@@ -47,9 +47,9 @@
                 </div>
                 <div>
                     <label for="cpf">CPF:</label>
-                    <input type="text" name="cpf" id="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}">
+                    <input type="text" name="cpf" id="cpf" maxlength="14" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}">
                 </div>
-                <div class="sex">
+                <div class="gender" id="gender">
                     <div>
                         <input type="radio" name="sex" id="sexMas" value="Mas"><label for="sexMas">Masculino</label>
                     </div>
@@ -59,6 +59,10 @@
                 </div>
                 <input type="submit" value="Enviar">
             </form>
+            <div class="savedDataConfirmation">
+                <p>Obrigado!</p>
+                <p>Suas informações foram salvas</p>
+            </div>
         </section>
         <section class="products">
             <h2><div></div>Sua seleção especial<div></div></h2>
@@ -143,7 +147,7 @@
         <section class="share">
             <h2><div></div>Compartilhe a novidade<div></div></h2>
             <p>Quer que seus amigos também ganhem a lista personalizada deles? Preencha agora!</p>
-            <form class="shareForm" id="shareForm">
+            <form class="shareForm" id="shareForm" autocomplete="off">
                 <div class="friendInfo">
                     <div>
                         <label for="friendName">Nome do seu amigo:</label>
@@ -156,6 +160,10 @@
                 </div>
                 <input type="submit" value="Enviar agora">
             </form>
+            <div class="thanksForSharing">
+                <p>Obrigado por compartilhar!</p>
+                <p>Fique a vontade para compartilhar mais!</p>
+            </div>
         </section>
     </main>
     <footer class="footer">
