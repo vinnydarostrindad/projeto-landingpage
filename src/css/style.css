@@ -85,8 +85,9 @@ input[type="text"], input[type="email"] {
 *************************/
 
 .main {
-    width: 931px;
+    max-width: 931px;
     margin: 20px auto;
+    padding: 0 15px;
 }
 
 .main .helpAlgorithm {
@@ -95,24 +96,25 @@ input[type="text"], input[type="email"] {
     color: #888;
     margin-bottom: 79px;
     padding: 0 15px;
+    gap: 25px;
 }
 
 .main .helpAlgorithm article h2 {
     font-size: 20px;
-    font-weight: lighter;
+    font-weight: normal;
 }
 
 .main .helpAlgorithm article div {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 220px;
+    min-height: 220px;
     margin-top: 25px;
 }
 
 .main .helpAlgorithm article div p {
     font-size: 12px;
-    width: 520px;
+    max-width: 520px;
     line-height: 18px;
 }
 
@@ -237,7 +239,7 @@ input#cpf.error::placeholder {
 .main .products h2 div {
     background-color: #707070;
     width: 38%;
-    height: 1px;
+    height: 0.1px;
 }
 
 .main .products .productsGallery .productsList {
@@ -245,7 +247,8 @@ input#cpf.error::placeholder {
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 50px 0 0;
-    row-gap: 39px;
+    row-gap: 40px;
+    column-gap: 25px;
 }
 
 .main .products .productsGallery .productsList .productContainer {
@@ -332,7 +335,7 @@ input#cpf.error::placeholder {
 
 .main .share {
     color: #888;
-    margin: 72px 0 128px;
+    margin: 72px 0 72PX;
 }
 
 .main .share h2 {

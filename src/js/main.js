@@ -82,7 +82,6 @@ const checkForms = {
             }
 
             if (!error) {
-                console.log('Data Saved')
                 this.$registerForm.classList.add('remove')
                 this.$confirmationBox.classList.add('appear')
                 this.$registerForm.parentElement.style.alignItems = 'center'
@@ -110,7 +109,6 @@ const checkForms = {
             }
 
             if (!error) {
-                console.log('Data Saved')
                 this.$thanksForSharing.classList.add('appear')
                 setTimeout(() => {
                     this.$thanksForSharing.classList.remove('appear')
@@ -176,17 +174,19 @@ const products = {
         .then(this.getJson)
         
         this.nextPageLink = firstPage.nextPage
-        console.log(firstPage)
+        
         firstPage.products.forEach((e) => {
             this.$productsList.innerHTML += `
                 <li class="productContainer">
                     <div class="productImg"><img src="${e.image}"></div>
-                    <h3 class="productName">${e.name}</h3>
-                    <h4 class="productDescription">${e.description}</h4>
-                    <span class="oldPrice">De: R$${e.oldPrice}</span>
-                    <span class="price"><strong>Por: R$${e.price}</strong></span>
-                    <span class="installmentPrice">ou ${e.installments.count}x de R$${e.installments.value.toString().replace(".", ",")}</span>
-                    <button>Comprar</button>
+                    <div>
+                        <h3 class="productName">${e.name}</h3>
+                        <h4 class="productDescription">${e.description}</h4>
+                        <span class="oldPrice">De: R$${e.oldPrice}</span>
+                        <span class="price"><strong>Por: R$${e.price}</strong></span>
+                        <span class="installmentPrice">ou ${e.installments.count}x de R$${e.installments.value.toString().replace(".", ",")}</span>
+                        <button>Comprar</button>
+                    </div>   
                 </li>
             `
         })
@@ -207,12 +207,14 @@ const products = {
                 this.$productsList.innerHTML += `
                     <li class="productContainer">
                         <div class="productImg"><img src="${e.image}"></div>
-                        <h3 class="productName">${e.name}</h3>
-                        <h4 class="productDescription">${e.description}</h4>
-                        <span class="oldPrice">De: R$${e.oldPrice}</span>
-                        <span class="price"><strong>Por: R$${e.price}</strong></span>
-                        <span class="installmentPrice">ou ${e.installments.count}x de R$${e.installments.value.toString().replace(".", ",")}</span>
-                        <button>Comprar</button>
+                        <div>
+                            <h3 class="productName">${e.name}</h3>
+                            <h4 class="productDescription">${e.description}</h4>
+                            <span class="oldPrice">De: R$${e.oldPrice}</span>
+                            <span class="price"><strong>Por: R$${e.price}</strong></span>
+                            <span class="installmentPrice">ou ${e.installments.count}x de R$${e.installments.value.toString().replace(".", ",")}</span>
+                            <button>Comprar</button>
+                        </div>
                     </li>
                 `
             })

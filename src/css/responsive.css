@@ -1,0 +1,152 @@
+@media (max-width: 924px) {
+    .main .products h2 div {
+        width: 36%;
+    }
+
+    .main .products .productsGallery .productsList {
+        justify-content: space-evenly;
+    }
+
+    .main .share h2 div {
+        width: 36%;
+    }
+}
+
+@media (max-width: 825px) {
+    .headerNav ul {
+        justify-content: center;
+        gap: 25px;
+        max-width: 345px;
+    }
+
+    .main .helpAlgorithm {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main .products h2 div {
+        width: 34%;
+    }
+
+    .main .share h2 div {
+        width: 34%;
+    }
+}
+
+@media (max-width: 750px) {
+    .header {
+        background: linear-gradient(187deg, rgba(112,112,112,1) 75%, rgba(255,255,255,1) 75.2%);
+    }
+
+    .main .shareForm .friendInfo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main .products h2 div {
+        width: 31%;
+    }
+    
+
+    .main .share h2 div {
+        width: 31%;
+    }
+
+    .footer {
+        height: 157px;
+    }
+
+    .footer p {
+        margin-top: 73px;
+    }
+}
+
+@media (max-width: 600px) {
+    .headerContainer {
+        padding: 66px 15px 0;
+    }
+
+    .main .products h2 div {
+        width: 27%;
+    }
+
+    .main .share h2 div {
+        width: 27%;
+    }
+}
+
+@media (max-width: 475px) {
+    .main .products h2 div {
+        width: 23%;
+    }
+
+    .main .products .productsGallery .productsList .productContainer {
+        display: flex;
+        align-items: center;
+        gap: 23px;
+        width: 392px;
+    }
+
+    .main .products .productsGallery .productsList .productContainer div.productImg {
+        width: 169px;
+        height: 134px;
+    }
+
+    .main .products .productsGallery .productsList .productContainer .productDescription {
+        display: none;
+    }
+
+    .main .products .productsGallery .productsList .productContainer div:last-child {
+        width: 200px;
+    }
+
+    .main .share h2 div {
+        width: 23%;
+    } 
+}
+
+@media (max-width: 408px) {
+    .header {
+        background: linear-gradient(194deg, rgba(112,112,112,1) 75%, rgba(255,255,255,1) 75.2%);
+    }
+    
+    .header h1 {
+        font-size: 36px;
+        text-align: left;
+    }
+
+    .header h1 span {
+        text-align: left;
+    }
+    
+    .headerNav ul {
+        gap: 5px;
+    }
+
+
+
+    .header p {
+        text-align: left;
+    }
+
+    .main .products h2 {
+        margin: 0px -15px;
+    }
+
+    .main .products h2 div {
+        width: 20%;
+    }
+
+    .main .products .productsGallery .productsList .productContainer div:last-child {
+        max-width: 160px;
+    }
+
+    .main .share h2 {
+        margin: 0px -15px;
+    }
+
+    .main .share h2 div {
+        width: 20%;
+    }
+
+}
