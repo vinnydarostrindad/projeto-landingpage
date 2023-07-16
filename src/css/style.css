@@ -253,6 +253,9 @@ input#cpf.error::placeholder {
 }
 
 .main .products .productsGallery .productsList .productContainer div.productImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 200px;
     height: 150px;
     border: 1px solid gray;
@@ -283,6 +286,7 @@ input#cpf.error::placeholder {
 
 .main .products .productsGallery .productsList .productContainer span.installmentPrice {
     display: block;
+    font-size: 12px;
     margin: 6px 0 10px;
 }
 

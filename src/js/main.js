@@ -156,6 +156,8 @@ const checkForms = {
 }
 
 const products = {
+    nextPageLink: '',
+
     init: function() {
         this.cacheSelectors()
         this.getFirstPage()
@@ -164,25 +166,57 @@ const products = {
     
     cacheSelectors: function() {
         this.$productsList = document.querySelector('#productsList')
-        this.$productImg = document.querySelectorAll('.productImg')
-        this.$productName = document.querySelectorAll('.productName')
-        this.$productDescription = document.querySelectorAll('.productDescription')
-        this.$oldPrice = document.querySelectorAll('.oldPrice')
-        this.$price = document.querySelectorAll('.price')
-        this.$installmentPrice = document.querySelectorAll('.installmentPrice')
         this.$showMoreProductsBtn = document.querySelector('#showMoreProducts')
     },
 
-    getFirstPage: function() {
+    getJson: (datas) => datas.json(),
 
+    getFirstPage: async function() {
+        const firstPage = await fetch('https://frontend-intern-challenge-api.iurykrieger.now.sh/products?page=1')
+        .then(this.getJson)
+        
+        this.nextPageLink = firstPage.nextPage
+        console.log(firstPage)
+        firstPage.products.forEach((e) => {
+            this.$productsList.innerHTML += `
+                <li class="productContainer">
+                    <div class="productImg"><img src="${e.image}"></div>
+                    <h3 class="productName">${e.name}</h3>
+                    <h4 class="productDescription">${e.description}</h4>
+                    <span class="oldPrice">De: R$${e.oldPrice}</span>
+                    <span class="price"><strong>Por: R$${e.price}</strong></span>
+                    <span class="installmentPrice">ou ${e.installments.count}x de R$${e.installments.value.toString().replace(".", ",")}</span>
+                    <button>Comprar</button>
+                </li>
+            `
+        })
     },
 
     bindEvents: function() {
-
+        this.$showMoreProductsBtn.onclick = this.Events.showMoreProducts_click.bind(this)
     },
 
     Events: {
-        
+        showMoreProducts_click: async function() {
+            const nextPage = await fetch(`https://${this.nextPageLink}` )
+            .then(this.getJson)
+            
+            this.nextPageLink = nextPage.nextPage
+
+            nextPage.products.forEach((e) => {
+                this.$productsList.innerHTML += `
+                    <li class="productContainer">
+                        <div class="productImg"><img src="${e.image}"></div>
+                        <h3 class="productName">${e.name}</h3>
+                        <h4 class="productDescription">${e.description}</h4>
+                        <span class="oldPrice">De: R$${e.oldPrice}</span>
+                        <span class="price"><strong>Por: R$${e.price}</strong></span>
+                        <span class="installmentPrice">ou ${e.installments.count}x de R$${e.installments.value.toString().replace(".", ",")}</span>
+                        <button>Comprar</button>
+                    </li>
+                `
+            })
+        }
     }
 }
 
