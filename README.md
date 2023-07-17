@@ -12,14 +12,15 @@ Projeto realizado em **HTML5**, **CSS3** e **JS**. O desafio foi passado pelo pr
 
 ### Desafios
 
-> Reproduzir o layout da maneira mais semelhante possível
-> Fazer as validações dos formulários
-> Consultar a API para pegar as informações dos produtos
-> Fazer aparecer mais produtos na página ao clicar **Ainda mais produtos aqui!**
+- Reproduzir o layout da maneira mais semelhante possível
+- Fazer as validações dos formulários
+- Consultar a API para pegar as informações dos produtos
+- Fazer aparecer mais produtos na página ao clicar **Ainda mais produtos aqui!**
 
 ## Acesso ao Projeto
 
-Você pode [acessar o código fonte do projeto inicial](https://github.com/vinnydarostrindad/projeto-landingpage/tree/main) ou [baixá-lo](https://github.com/vinnydarostrindad/projeto-landingpage/archive/refs/heads/main.zip).
+- Você pode [acessar o código fonte do projeto inicial](https://github.com/vinnydarostrindad/projeto-landingpage/tree/main) ou [baixá-lo](https://github.com/vinnydarostrindad/projeto-landingpage/archive/refs/heads/main.zip).
+- Ou acesse a página direto por [aquí](https://bit.ly/projetolandingpage-vinnydaros).
 
 ## Abrir e rodar o projeto
 
