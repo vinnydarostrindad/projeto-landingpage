@@ -24,7 +24,7 @@ input[type="text"], input[type="email"] {
     color: #fff;
     background: #707070;
     background: linear-gradient(185deg, rgba(112,112,112,1) 75%, rgba(255,255,255,1) 75.2%);
-    height: 399px;
+    min-height: 399px;
 }
 
 .headerContainer {
@@ -99,20 +99,52 @@ input[type="text"], input[type="email"] {
     gap: 25px;
 }
 
-.main .helpAlgorithm article h2 {
+.main .helpAlgorithm article > div:first-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.main .helpAlgorithm article > div:first-child h2 {
     font-size: 20px;
     font-weight: normal;
 }
 
-.main .helpAlgorithm article div {
+.main .helpAlgorithm article > div:first-child div {
+    display: none;
+    cursor: pointer;
+}
+
+.main .helpAlgorithm article > div:first-child div img {
+    color: #888;
+    width: 22px;
+    transform: rotate(180deg);
+    transition: all 300ms ease;
+}
+
+.main .helpAlgorithm article > div:first-child div img.textHidden {
+    transform: rotate(0deg);
+}
+
+.main .helpAlgorithm article > div:last-child {
+    overflow: hidden;
+}
+
+.main .helpAlgorithm article > div:last-child #helpAlgorithmText {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     min-height: 220px;
     margin-top: 25px;
+    transition: all 500ms ease-in-out;
 }
 
-.main .helpAlgorithm article div p {
+.main .helpAlgorithm article > div:last-child #helpAlgorithmText.hideText {
+    margin-top: -550px;
+}
+
+.main .helpAlgorithm article > div:last-child p {
     font-size: 12px;
     max-width: 520px;
     line-height: 18px;
@@ -151,12 +183,14 @@ input[type="text"], input[type="email"] {
 .main .helpAlgorithm .registerForm .gender label {
     display: inline;
     font-size: 12px;
+    cursor: pointer;
 }
 
 .main .helpAlgorithm .registerForm .gender input[type="radio"] {
     display: inline;
     width: 14px;
     height: 14px;
+    cursor: pointer;
 }
 
 .main .helpAlgorithm .registerForm input[type="submit"] {
@@ -166,6 +200,7 @@ input[type="text"], input[type="email"] {
     height: 39px;
     border: 1px solid #707070;
     border-radius: 4px;
+    cursor: pointer;
     transition: all 300ms ease;
 }
 
@@ -301,6 +336,7 @@ input#cpf.error::placeholder {
     height: 30px;
     border: 1px solid #707070;
     border-radius: 4px;
+    cursor: pointer;
     transition: all 300ms ease;
 }
 
@@ -320,6 +356,7 @@ input#cpf.error::placeholder {
     margin: 50px auto 0;
     border: 1px solid #707070;
     border-radius: 4px;
+    cursor: pointer;
     transition: all 300ms ease;
 }
 
@@ -378,6 +415,7 @@ input#cpf.error::placeholder {
     margin: 50px auto 0;
     border: 1px solid #707070;
     border-radius: 4px;
+    cursor: pointer;
     transition: all 300ms ease;
 }
 

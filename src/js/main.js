@@ -1,4 +1,26 @@
-const checkForms = {
+const hideHelpAlgorithmText = {
+    init: function() {
+        this.cacheSelectors()
+        this.bindEvents()
+    },
+
+    cacheSelectors: function() {
+        this.$hideTextBtn = document.querySelector('#hideTextBtn')
+    },
+
+    bindEvents: function() {
+        this.$hideTextBtn.onclick = this.Events.toggleHideText_click.bind(this)
+    },
+
+    Events: {
+        toggleHideText_click: function(e) {
+            e.target.classList.toggle('textHidden')
+            e.target.parentElement.parentElement.nextElementSibling.children[0].classList.toggle('hideText')
+        }
+    }
+}
+
+const CheckForms = {
     init: function() {
         this.cacheSelectors()
         this.bindEvents()
@@ -23,7 +45,7 @@ const checkForms = {
     bindEvents: function() {
         const self = this
 
-        this.$clientCpf.onkeypress = this.Events.editCpf_keypress
+        this.$clientCpf.onkeydown = this.Events.editCpf_keydown
         this.$registerForm.onsubmit = this.Events.checkRegisterForm_submit.bind(this)
         this.$shareForm.onsubmit = this.Events.checkShareForm_submit.bind(this)
         this.$allInputs.forEach(e => {
@@ -32,7 +54,7 @@ const checkForms = {
     },
 
     Events: {
-        editCpf_keypress: function(e) {
+        editCpf_keydown: function(e) {
             switch (e.target.value.length) {
                 case 3:
                     e.target.value += '.'
@@ -153,7 +175,7 @@ const checkForms = {
     }
 }
 
-const products = {
+const ProductsDesktop = {
     nextPageLink: '',
 
     init: function() {
@@ -222,5 +244,9 @@ const products = {
     }
 }
 
-checkForms.init()
-products.init()
+CheckForms.init()
+hideHelpAlgorithmText.init()
+
+if (innerWidth > 474) {
+    ProductsDesktop.init()
+}

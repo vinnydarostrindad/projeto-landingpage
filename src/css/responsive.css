@@ -24,6 +24,10 @@
         align-items: center;
     }
 
+    .main .helpAlgorithm article > div:first-child div {
+        display: flex;
+    }
+
     .main .products h2 div {
         width: 34%;
     }
@@ -67,19 +71,23 @@
     }
 
     .main .products h2 div {
-        width: 27%;
+        width: 26%;
     }
 
     .main .share h2 div {
-        width: 27%;
+        width: 26%;
     }
 }
 
 @media (max-width: 475px) {
+    .main .products h2 {
+        margin: 0px -15px;
+    }
+
     .main .products h2 div {
         width: 23%;
     }
-
+    
     .main .products .productsGallery .productsList .productContainer {
         display: flex;
         align-items: center;
@@ -91,13 +99,17 @@
         width: 169px;
         height: 134px;
     }
-
+    
     .main .products .productsGallery .productsList .productContainer .productDescription {
         display: none;
     }
-
+    
     .main .products .productsGallery .productsList .productContainer div:last-child {
         width: 200px;
+    }
+
+    .main .share h2 {
+        margin: 0px -15px;
     }
 
     .main .share h2 div {
@@ -123,14 +135,8 @@
         gap: 5px;
     }
 
-
-
     .header p {
         text-align: left;
-    }
-
-    .main .products h2 {
-        margin: 0px -15px;
     }
 
     .main .products h2 div {
@@ -141,12 +147,74 @@
         max-width: 160px;
     }
 
-    .main .share h2 {
-        margin: 0px -15px;
-    }
-
     .main .share h2 div {
         width: 20%;
     }
 
+}
+
+@media (max-width: 360px) { 
+    input[type="text"], input[type="email"] {
+        width: 240px;
+    }
+
+    .main .products .productsGallery .productsList .productContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0px;
+        width: 392px;
+    }
+
+    .main .products h2 {
+        font-size: 16px;
+    }
+
+    .main .products h2 div {
+        width: 15%;
+    }
+
+    .main .products > button {
+        width: fit-content;
+        padding: 5px 10px;
+    }
+    
+    .main .share h2 {
+        font-size: 16px;
+    }
+    
+    .main .share h2 div {
+        width: 15%;
+    }
+
+    .main .shareForm input[type="submit"] {
+        width: fit-content;
+        padding: 5px 10px;
+    }
+}
+
+@media (max-width: 355px) {
+    .headerNav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 0 15px;
+    }
+    
+    .headerNav ul li:first-child {
+        align-self: flex-start;
+    }
+
+    .headerNav ul li:nth-child(2) {
+        align-self: flex-end;
+    }
+
+    .headerNav ul li:nth-child(3) {
+        align-self: flex-start;
+    }
+
+    .headerNav ul li:last-child {
+        align-self: flex-end;
+    }
+    
 }
