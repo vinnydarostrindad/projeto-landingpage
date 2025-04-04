@@ -1,30 +1,27 @@
-# Desafio | Frontend Developer - Landing Page
+# Landing Page de Produtos
 
-## Descrição do Projeto
+Landing page responsiva construída com HTML, CSS e JavaScript que consome dados de uma API para exibir produtos de forma dinâmica. O projeto oferece uma experiência fluida tanto para desktop quanto para dispositivos móveis.
 
-Projeto realizado em **HTML5**, **CSS3** e **JS**. O desafio foi passado pelo professor Thiago Medeiros no curso Formação Full Stack Javascript, e o desafio consiste em reproduzir o layout de uma *landing page*, com formulários e com uma grade de produtos.
+## Funcionalidades
 
-### Links Consultados
+- Carregamento incremental de produtos ("Ver mais")
+- Alternância entre visualização mobile e desktop
+- Design responsivo com layout adaptado
+- Código organizado em módulos JavaScript
+- Consumo de API utilizando `fetch`
 
-**Link do Mock do Layout**: https://xd.adobe.com/spec/4025e242-a495-4594-71d2-5fd89d774b57-3614
+## Tecnologias Utilizadas
 
-**Endpoint da API**: https://frontend-intern-challenge-api.iurykrieger.now.sh/products?page=1
+- HTML5
+- CSS3 (com media queries para responsividade)
+- JavaScript (vanilla)
 
-### Desafios
+## Como Usar
 
-- Reproduzir o layout da maneira mais semelhante possível
-- Fazer as validações dos formulários
-- Consultar a API para pegar as informações dos produtos
-- Fazer aparecer mais produtos na página ao clicar **Ainda mais produtos aqui!**
+1. Clone o repositório:
 
-## Acesso ao Projeto
+   ```bash
+   git clone https://github.com/seu-usuario/landing-page-produtos.git
+   ```
 
-- Você pode [acessar o código fonte do projeto inicial](https://github.com/vinnydarostrindad/projeto-landingpage/tree/main) ou [baixá-lo](https://github.com/vinnydarostrindad/projeto-landingpage/archive/refs/heads/main.zip).
-- Ou acesse a página direto por [aquí](https://bit.ly/projetolandingpage-vinnydaros).
-
-## Abrir e rodar o projeto
-
-Após baixar o projeto, abra o arquivo .zip e clique no arquivo **index.hmtl**, ou extraia para alguma pasta os arquivos e as pastas para depois clicar no arquivo **index.html**.
-
-# Feito por Vinny Daros Trindade
-
+2. Abra o arquivo `index.html` no seu navegador.
